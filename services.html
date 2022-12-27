@@ -332,38 +332,77 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
 
 <body class="x  x-fonts-archivo-black" context="[object Object]">
 
-   <!-- Messenger Chat Plugin Code -->
-   <div id="fb-root"></div>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
 
-   <!-- Your Chat Plugin code -->
-   <div id="fb-customer-chat" class="fb-customerchat">
-   </div>
- 
-   <script>
-     var chatbox = document.getElementById('fb-customer-chat');
-     chatbox.setAttribute("page_id", "115650730261201");
-     chatbox.setAttribute("attribution", "biz_inbox");
-   </script>
- 
-   <!-- Your SDK code -->
-   <script>
-     window.fbAsyncInit = function() {
-       FB.init({
-         xfbml            : true,
-         version          : 'v15.0'
-       });
-     };
- 
-     (function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));
-   </script>
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
 
-   
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "115650730261201");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v15.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+  <script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?22572';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+      "enabled": true,
+      "chatButtonSetting": {
+        "backgroundColor": "#4dc247",
+        "ctaText": "",
+        "borderRadius": "25",
+        "marginLeft": "0",
+        "marginBottom": "50",
+        "marginRight": "50",
+        "position": "right"
+      },
+      "brandSetting": {
+        "brandName": "IBling Solutions",
+        "brandSubTitle": "Typically replies within 5 mins",
+        "brandImg": "https://pps.whatsapp.net/v/t61.24694-24/216026580_286450543238247_8378335149113434599_n.jpg?ccb=11-4&oh=01_AdRy_IQuPMu84VGk-5mPqqhjvcllDA-j6_QbcnyQCs3gFA&oe=63AE62C7",
+        "welcomeText": "Hi there!\nHow can I help you?",
+        "messageText": "Hello, I have a question about {{page_link}}",
+        "backgroundColor": "#0a5f54",
+        "ctaText": "Start Chat",
+        "borderRadius": "25",
+        "autoShow": false,
+        "phoneNumber": "919224258966"
+      }
+    };
+    s.onload = function () {
+      CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  </script>
+
+
   <div id="layout-ada-2-e-3-b-1-61-ad-44-e-0-b-0-a-5-a-4-d-48-c-21-e-8-c-6"
     class="layout layout-layout layout-layout-layout-10 locale-en-US lang-en">
     <div data-ux="Page" id="page-4644"
@@ -417,9 +456,8 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
                                   data-tccl="ux2.HEADER.header9.Logo.Default.Link.Default.4651.click,click">
                                   <div data-ux="Block"
                                     class="x-el x-el-div c1-1 c1-2 c1-2d c1-1o c1-1p c1-1q c1-33 c1-34 c1-b c1-c c1-d c1-e c1-f c1-g">
-                                    <img
-                                      src="img/logo.png"
-                                      alt="IBling Solutions" data-ux="ImageLogo" data-aid="HEADER_LOGO_IMAGE_RENDERED"
+                                    <img src="img/logo.png" alt="IBling Solutions" data-ux="ImageLogo"
+                                      data-aid="HEADER_LOGO_IMAGE_RENDERED"
                                       class="x-el x-el-img c1-1 c1-2 c1-10 c1-30 c1-w c1-x c1-1b c1-1d c1-35 c1-36 c1-37 c1-3 c1-r c1-38 c1-s c1-39 c1-b c1-c c1-3a c1-3b c1-3c c1-3d c1-3e c1-3f c1-3g c1-3h c1-3i c1-3j c1-3k c1-3l c1-3m c1-3n c1-d c1-3o c1-3p c1-3q c1-e c1-f c1-g" />
                                   </div>
                                 </a></div>
@@ -620,10 +658,8 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
                                   data-tccl="ux2.HEADER.header9.Logo.Default.Link.Default.4665.click,click">
                                   <div data-ux="Block"
                                     class="x-el x-el-div c1-1 c1-2 c1-2d c1-1o c1-1p c1-1q c1-33 c1-34 c1-b c1-c c1-d c1-e c1-f c1-g">
-                                    <img
-                                       src="img/logo.png"
-                                      alt="IBling Solutions" data-ux="ImageLogo" data-aid="HEADER_LOGO_IMAGE_RENDERED"
-                                      id="logo-4663"
+                                    <img src="img/logo.png" alt="IBling Solutions" data-ux="ImageLogo"
+                                      data-aid="HEADER_LOGO_IMAGE_RENDERED" id="logo-4663"
                                       class="x-el x-el-img c1-1 c1-2 c1-10 c1-30 c1-w c1-x c1-1b c1-1d c1-35 c1-36 c1-37 c1-3 c1-r c1-38 c1-s c1-39 c1-b c1-c c1-3a c1-3b c1-3c c1-3d c1-3e c1-3f c1-3g c1-3h c1-3i c1-3j c1-3k c1-3l c1-3m c1-3n c1-d c1-3o c1-3p c1-3q c1-e c1-f c1-g" />
                                   </div>
                                 </a></div>
@@ -1463,7 +1499,7 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
             </div>
           </div>
         </div> -->
-        
+
       </div>
     </div>
   </div>

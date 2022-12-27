@@ -391,6 +391,43 @@ SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
      }(document, 'script', 'facebook-jssdk'));
    </script>
 
+    <script>
+      var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?22572';
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = url;
+      var options = {
+    "enabled":true,
+    "chatButtonSetting":{
+        "backgroundColor":"#4dc247",
+        "ctaText":"",
+        "borderRadius":"25",
+        "marginLeft":"0",
+        "marginBottom":"50",
+        "marginRight":"50",
+        "position":"right"
+    },
+    "brandSetting":{
+        "brandName":"IBling Solutions",
+        "brandSubTitle":"Typically replies within 5 mins",
+        "brandImg":"https://pps.whatsapp.net/v/t61.24694-24/216026580_286450543238247_8378335149113434599_n.jpg?ccb=11-4&oh=01_AdRy_IQuPMu84VGk-5mPqqhjvcllDA-j6_QbcnyQCs3gFA&oe=63AE62C7",
+        "welcomeText":"Hi there!\nHow can I help you?",
+        "messageText":"Hello, I have a question about {{page_link}}",
+        "backgroundColor":"#0a5f54",
+        "ctaText":"Start Chat",
+        "borderRadius":"25",
+        "autoShow":false,
+        "phoneNumber":"919224258966"
+    }
+    };
+      s.onload = function() {
+          CreateWhatsappChatWidget(options);
+      };
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    </script>
+
    
   <div id="layout-ada-2-e-3-b-1-61-ad-44-e-0-b-0-a-5-a-4-d-48-c-21-e-8-c-6"
     class="layout layout-layout layout-layout-layout-10 locale-en-US lang-en">
